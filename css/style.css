@@ -10,7 +10,6 @@ body{
     color: #fff;
     line-height: 28px;
     font-size: 24px;
-   
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
 }
@@ -73,9 +72,69 @@ body{
 .header-content__btn:hover{
     background: #770302;
 }
+
 .slider__item{
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.slider .slick-dots button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #0B0B0B;
+    border: none;
+    padding: 0;
+    font-size: 0;
+    cursor: pointer;
+    outline: none;
+} 
+.slider .slick-dots .slick-active button{
+    background-color: #fff;
+}
+.slider .slick-dots li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.slider .slick-dots{
+    margin: -55px auto 0;
+    position: relative;
+    z-index: 6;
+    max-width: 1200px;
+}
+.statistics{
+    margin: 160px 0 100px;
+}
+.statistics-items{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.statistics-item__title{
+    margin-bottom: 19px;
+}
+.statistics-item__num{
+    font-size: 96px;
+    line-height: 112px;
+    margin-bottom: 7px;
+    font-family: 'Roboto', sans-serif;
+}
+.statistics-item__num span {
+    font-size: 24px;
+    line-height: 28px;
+    margin-left: -20px;
+    
+}
+.statistics-item__desc{
+    color:#B70021;
+}
+.statistics-item__num--speed span{
+    display: inline-block;
+    position: relative;
+}
+.statistics-item__num--speed span::before {
+    content:"+";
+    position: absolute;
+    top: -70px;
 }
